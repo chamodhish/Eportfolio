@@ -230,6 +230,7 @@ section {
 .projets-content-card,
 .veille-content,
 .synthese-content,
+.procedure-content,
 .contact-content {
     background: rgba(58, 98, 159, 0.4);
     backdrop-filter: blur(10px);
@@ -250,6 +251,7 @@ section {
 .projets-content-card::before,
 .veille-content::before,
 .synthese-content::before,
+.procedure-content::before,
 .contact-content::before {
     content: '';
     position: absolute;
@@ -273,6 +275,7 @@ section {
 .projets-content-card:hover,
 .veille-content:hover,
 .synthese-content:hover,
+.procedure-content:hover,
 .contact-content:hover {
     transform: translateY(-10px);
     box-shadow: 
@@ -286,7 +289,7 @@ section {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .profil-content p {
@@ -330,6 +333,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    font-size: 14px;
     justify-content: space-between;
 }
 
@@ -367,7 +371,7 @@ section {
 }
 
 .competance-card h3 {
-    font-size: 22px;
+    font-size: 17px;
     margin-bottom: 15px;
     color: #00d4ff;
     border-bottom: 2px solid rgba(0, 212, 255, 0.5);
@@ -391,6 +395,12 @@ section {
 }
 
 /* ========= TABLEAU DE SYNTHESE ==================== */
+
+.synthese-content{
+    font-size: 14px;
+}
+
+
 .images_centeringtab{
     display: flex;
     flex-wrap: wrap;
@@ -423,29 +433,16 @@ section {
 /* === Cartes d'images pour les visualisations === */
 .images-cards-row {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     width: 100%;
     padding: 10px 0;
 }
 
-.competance-card.image-card {
-    flex: 0 0 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 280px;
-}
-
-.competance-card.image-card h3 {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
 
 .image-container {
-    width: 100%;
+    width: 60%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,6 +466,12 @@ section {
     transform: scale(1.03);
     filter: brightness(1.1);
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+}
+
+/* ==================== PROCEDURE ==================== */
+
+.procedure-content {
+    font-size: 14px;
 }
 /* ==================== PROJETS ==================== */
 .projets-content-card {
