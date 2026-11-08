@@ -394,6 +394,57 @@ section {
     color: #00d4ff;
 }
 
+/* Grille des logos */
+.grille-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Chaque case */
+.logo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* Images */
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Nom des logiciels */
+.logo h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+/* Petit effet au survol */
+.logo:hover {
+    transform: translateY(-5px);
+}
+
+/* Adaptation téléphone */
+@media (max-width: 600px) {
+    .grille-logos {
+        grid-template-columns: repeat(2, 130px);
+    }
+}
 /* ========= TABLEAU DE SYNTHESE ==================== */
 
 .synthese-content{
