@@ -1,0 +1,9 @@
+#Ajouter ou sauvegarder un fichier, sauvegarder le repertoire de travail
+#avant toute chose, prendre le dossier du github 
+#git pull --rebase origin main
+#Puis ajouter ou modifier le fichier 
+#git add . 
+#Sauvegarder le travail au local
+#git commit -m "message"
+#Envoyer le travail sur git hub
+#git push origin main
