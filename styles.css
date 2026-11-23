@@ -230,6 +230,7 @@ section {
 .projets-content-card,
 .veille-content,
 .synthese-content,
+.situations-content,
 .procedure-content,
 .contact-content {
     background: rgba(58, 98, 159, 0.4);
@@ -251,6 +252,7 @@ section {
 .projets-content-card::before,
 .veille-content::before,
 .synthese-content::before,
+.situations-content::before,
 .procedure-content::before,
 .contact-content::before {
     content: '';
@@ -275,6 +277,7 @@ section {
 .projets-content-card:hover,
 .veille-content:hover,
 .synthese-content:hover,
+.situations-content:hover,
 .procedure-content:hover,
 .contact-content:hover {
     transform: translateY(-10px);
@@ -448,6 +451,41 @@ section {
 /* ========= TABLEAU DE SYNTHESE ==================== */
 
 .synthese-content{
+    font-size: 14px;
+}
+
+
+.images_centeringtab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.images_centeringtab img {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.9);
+    position: relative;
+}
+
+.images_centeringtab img:hover {
+    transform: scale(1.5) rotate(2deg);
+    z-index: 100;
+    filter: brightness(1.1);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+/* ========= SITUATIONS PROFESSIONNELLES ==================== */
+.situations-content{
     font-size: 14px;
 }
 
